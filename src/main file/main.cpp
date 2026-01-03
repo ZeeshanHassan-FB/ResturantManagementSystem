@@ -2,7 +2,8 @@
 #include <cstdlib> 
 #include "../supporting files/login.h"
 #include "../supporting files/menu.h"
-
+#include "../supporting files/dine_in_order.h"
+#include "../supporting files/tables.h"
 
 using namespace std;
 
@@ -95,7 +96,7 @@ void adminPanel() {
 // ================= This is The Main Function  =================
 int main() {
    
-
+       loadTablesFromFile();
     int choice;
     do {
         system("cls");
