@@ -99,16 +99,20 @@ void signup()
     cin >> p;
     
     cout << "Select Role:\n1. Admin (Manager)\n2. Worker (Staff/Waiter)\nChoose Your role: ";
-    cin >> role;
+    cin >> roleChoice;
 
 //   It is to check the condition either it is admin or worker
 
     if(roleChoice == 1){ 
         role = "admin";
     }
-    else{ 
+    elseif (roleChoice==2){ 
         role = "worker";
 }
+    else{
+        cout<<"Invalid role selected."<<endl;
+    }
+   
     ofstream out("users.csv", ios::app);
     
     out << u << "," << p << "," << role << endl;
