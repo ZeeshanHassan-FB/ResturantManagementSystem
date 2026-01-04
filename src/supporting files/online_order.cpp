@@ -1,5 +1,5 @@
 #include "online_order.h"
-#include "menu.h" // Include menu to access updateStock
+#include "menu.h" 
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -8,7 +8,7 @@ using namespace std;
 
 void takeOnlineOrder() {
     cout << "\n--- Online Order ---\n";
-    viewMenuOnly(); // Show menu
+    viewMenuOnly(); 
     
     int id;
     string name, phone, item;
@@ -28,7 +28,7 @@ void takeOnlineOrder() {
 
     cout << "Quantity: "; cin >> qty;
 
-    // Check Stock
+    
     if(updateStock(item, qty)) {
         ofstream f("online_order.csv", ios::app);
         f << id << "," << name << "," << phone << "," << item << "," << qty << "," << price << endl;
