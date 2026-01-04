@@ -26,6 +26,7 @@ string login()
 
     usersheader(); 
     string u, p;
+    cin.ignore();
     cout << "Enter username: ";
     cin >> u;
     cout << "Enter password: ";
@@ -73,6 +74,7 @@ void signup()
     string u, p, role;
     int roleChoice;
     
+    cin.ignore();
     cout << "Enter new username: ";
     getline(cin,u);
 
@@ -96,19 +98,23 @@ void signup()
     f.close();
 
     cout << "Enter password: ";
-    cin >> p;
+    getline(cin,p);
     
     cout << "Select Role:\n1. Admin (Manager)\n2. Worker (Staff/Waiter)\nChoose Your role: ";
-    cin >> role;
+    cin >> roleChoice;
 
 //   It is to check the condition either it is admin or worker
 
     if(roleChoice == 1){ 
         role = "admin";
     }
-    else{ 
+    else if (roleChoice==2){ 
         role = "worker";
 }
+    else{
+        cout<<"Invalid role selected."<<endl;
+    }
+   
     ofstream out("users.csv", ios::app);
     
     out << u << "," << p << "," << role << endl;
@@ -123,8 +129,9 @@ void forgotPassword()
 {
     usersheader();
     string u;
+    cin.ignore();
     cout << "Enter username: ";
-    cin >> u;
+    getline(cin,u);
 
     ifstream f("users.csv");
     string line, fline;

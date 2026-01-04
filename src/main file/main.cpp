@@ -4,8 +4,9 @@
 #include "../supporting files/menu.h"
 #include "../supporting files/dine_in_order.h"
 #include "../supporting files/tables.h"
-#include "billing.h"
-#include "online_order.h"
+#include "../supporting files/billing.h"
+#include "../supporting files/online_order.h"
+
 using namespace std;
 
 // ================= This is Code block of workers (waiters) =================
@@ -32,8 +33,8 @@ void workerPanel() {
                takeDineInOrder();
                 break;
             case 3:
-                
-                cout << "\n[Coming Soon: Generate Bill]\n";
+               
+                generateBill();
                 break;
             case 4:
                 cout << "Logging out...\n";
@@ -77,11 +78,11 @@ void adminPanel() {
                 takeDineInOrder();
                 break;
             case 4: 
-                cout << "\n[Coming Soon: Online Order]\n"; 
+                takeOnlineOrder(); 
                 break;
             case 5: 
                
-                cout << "\n[Coming Soon: Generate Bill]\n";
+                generateBill();
                 break;
             case 6: 
                 cout << "Logging out...\n"; 
