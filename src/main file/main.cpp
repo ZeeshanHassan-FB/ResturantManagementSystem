@@ -26,11 +26,10 @@ void workerPanel() {
 
         switch (opt) {
             case 1:
-                cout << "\n[Coming Soon: Manage Tables]\n";
+                manageTables();
                 break;
             case 2:
-               
-                cout << "\n[Coming Soon: Take Orders]\n";
+               takeDineInOrder();
                 break;
             case 3:
                 
@@ -71,11 +70,11 @@ void adminPanel() {
                 break;
             case 2: 
                
-                cout << "\n[Coming Soon: Manage Tables]\n";
+                manageTables();
                 break;
             case 3: 
                
-                cout << "\n[Coming Soon: Dine-In Order]\n";
+                takeDineInOrder();
                 break;
             case 4: 
                 cout << "\n[Coming Soon: Online Order]\n"; 
