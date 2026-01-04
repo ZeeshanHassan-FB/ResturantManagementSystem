@@ -77,7 +77,7 @@ void adminPanel() {
                 takeDineInOrder();
                 break;
             case 4: 
-                cout << "\n[Coming Soon: Online Order]\n"; 
+                takeOnlineOrder(); 
                 break;
             case 5: 
                
