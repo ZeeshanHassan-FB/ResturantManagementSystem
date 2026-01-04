@@ -1,2 +1,6 @@
-zeeshan logged in as admin
-usman logged in as worker
+zeeshan login failed
+usman login failed
+amin signed up successfully 	 Role: admin
+amin logged in successfully 	 Role: admin
+zeeshan login failed
+amin logged in successfully 	 Role: admin

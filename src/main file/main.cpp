@@ -131,15 +131,12 @@ int main() {
             system("pause");
         }
         else if (choice == 4) {
-            generateBill();
-            system("pause");
-        }
-        else if (choice == 5) {
-            takeOnlineOrder();
+            
             system("pause");
         }
 
-    } while (choice != 6);
+
+    } while (choice != 4);
 
     cout << "\nSystem Shutdown.\n";
     return 0;
