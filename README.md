@@ -23,14 +23,14 @@ It handles login, menu management, dine-in orders, online orders, delivery, and 
 - File Handling (CSV, TXT)
 - GitHub for version control
 
-##Contribution Summary
+## Contribution Summary
 
-Hazrat Amin: Online order module, delivery system, billing system
-Zeeshan: Menu management and menu.csv
-Usman: Dine-in order system and dine_in_orders.csv
+- Hazrat Amin: Online order module, delivery system, billing system
+- Zeeshan: Menu management and menu.csv
+- Usman: Dine-in order system and dine_in_orders.csv
 
-Each member contributed independently with meaningful GitHub commits.
-This project applies fundamental programming concepts to build a modular restaurant management system with file handling and team collaboration using GitHub.
+-Each member contributed independently with meaningful GitHub commits.
+-This project applies fundamental programming concepts to build a modular restaurant management system with file handling and team collaboration using GitHub.
 
 ## How to Run
 ```bash
