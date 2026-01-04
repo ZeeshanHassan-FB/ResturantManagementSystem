@@ -2,8 +2,10 @@
 #include <cstdlib> 
 #include "../supporting files/login.h"
 #include "../supporting files/menu.h"
-
-
+#include "../supporting files/dine_in_order.h"
+#include "../supporting files/tables.h"
+#include "billing.h"
+#include "online_order.h"
 using namespace std;
 
 // ================= This is Code block of workers (waiters) =================
@@ -24,11 +26,10 @@ void workerPanel() {
 
         switch (opt) {
             case 1:
-                cout << "\n[Coming Soon: Manage Tables]\n";
+                manageTables();
                 break;
             case 2:
-               
-                cout << "\n[Coming Soon: Take Orders]\n";
+               takeDineInOrder();
                 break;
             case 3:
                 
@@ -69,11 +70,11 @@ void adminPanel() {
                 break;
             case 2: 
                
-                cout << "\n[Coming Soon: Manage Tables]\n";
+                manageTables();
                 break;
             case 3: 
                
-                cout << "\n[Coming Soon: Dine-In Order]\n";
+                takeDineInOrder();
                 break;
             case 4: 
                 cout << "\n[Coming Soon: Online Order]\n"; 
@@ -95,7 +96,7 @@ void adminPanel() {
 // ================= This is The Main Function  =================
 int main() {
    
-
+       loadTablesFromFile();
     int choice;
     do {
         system("cls");
@@ -128,8 +129,16 @@ int main() {
             forgotPassword(); 
             system("pause");
         }
+        else if (choice == 4) {
+            generateBill();
+            system("pause");
+        }
+        else if (choice == 5) {
+            takeOnlineOrder();
+            system("pause");
+        }
 
-    } while (choice != 4);
+    } while (choice != 6);
 
     cout << "\nSystem Shutdown.\n";
     return 0;
