@@ -4,8 +4,9 @@
 #include "../supporting files/menu.h"
 #include "../supporting files/dine_in_order.h"
 #include "../supporting files/tables.h"
-#include "billing.h"
-#include "online_order.h"
+#include "../supporting files/billing.h"
+#include "../supporting files/online_order.h"
+
 using namespace std;
 
 // ================= This is Code block of workers (waiters) =================
