@@ -4,7 +4,8 @@
 #include "../supporting files/menu.h"
 #include "../supporting files/dine_in_order.h"
 #include "../supporting files/tables.h"
-
+#include "billing.h"
+#include "online_order.h"
 using namespace std;
 
 // ================= This is Code block of workers (waiters) =================
@@ -129,8 +130,16 @@ int main() {
             forgotPassword(); 
             system("pause");
         }
+        else if (choice == 4) {
+            generateBill();
+            system("pause");
+        }
+        else if (choice == 5) {
+            takeOnlineOrder();
+            system("pause");
+        }
 
-    } while (choice != 4);
+    } while (choice != 6);
 
     cout << "\nSystem Shutdown.\n";
     return 0;
