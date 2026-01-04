@@ -32,8 +32,8 @@ void workerPanel() {
                takeDineInOrder();
                 break;
             case 3:
-                
-                cout << "\n[Coming Soon: Generate Bill]\n";
+               
+                generateBill();
                 break;
             case 4:
                 cout << "Logging out...\n";
@@ -81,7 +81,7 @@ void adminPanel() {
                 break;
             case 5: 
                
-                cout << "\n[Coming Soon: Generate Bill]\n";
+                generateBill();
                 break;
             case 6: 
                 cout << "Logging out...\n"; 
